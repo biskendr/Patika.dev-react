@@ -1,0 +1,15 @@
+{
+  "name": "react-odev-00",
+  "version": "1.0.0",
+  "description": "Patika-React dersi ilk odevi",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Burak İskender",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.4"
+  }
+}
