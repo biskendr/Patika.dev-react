@@ -8,7 +8,6 @@ export default async function handler(req, res) {
         const currentData = await getCityByGeoCoords(lat, lon);
         res.status(200).json(currentData)
     } catch (error) {
-        const cod = error.response?.data?.cod || "Unknown";
-        res.status(cod).json({ error: `${cod} Something went wrong` });
+        res.status(500).json({ error: ' Something went wrong' });
     }
 }
