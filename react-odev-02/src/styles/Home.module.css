@@ -1,8 +1,18 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
   min-height: 100vh;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 4em 0;
+  }
+}
+
+.light {
+  color: black;
+  background: url("/day.webp") no-repeat center center / cover;  
+}
+.dark {
+  color: white;
+  background: url("/night.webp") no-repeat center center / cover;
 }
