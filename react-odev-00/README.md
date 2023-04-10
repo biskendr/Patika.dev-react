@@ -1,3 +1,32 @@
+# Patika.dev React Ödev 00
+
+Bu ödev, Axios kütüphanesi kullanarak JSONPlaceholder API'sinden veri çekmek ve verileri konsolda göstermek için basit bir konsol örneğidir.
+
+# Kurulum
+
+Yerel bir kopya almak için şu adımları izleyin:
+
+1. Bu depoyu kopyalayın:
+
+```bash
+git clone https://github.com/biskendr/Patika.dev-react
+cd Patika.dev-react/react-odev-00
+```
+
+2. Bağımlılıkları yükleyin:
+
+```bash
+npm install
+```
+
+3. Uygulamayı başlatın:
+
+```bash
+npm start
+```
+
+4. Uygulama çıktısını konsolda görüntüleyebilirsiniz.
+
 # Gereksinimler
 
 - Bu fonksiyon **"async"** olarak tanımlanmalı ve default olarak dışa aktarılmalıdır. Fonksiyonun içindeki asenkron fonksiyonlar **"await"** ile tanımlanmalıdır.
