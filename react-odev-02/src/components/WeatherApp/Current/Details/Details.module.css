@@ -1,0 +1,76 @@
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1em;
+  justify-items: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.main.light > .card {
+  background: rgba(230, 230, 230, 0.5);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgb(255, 255, 255);
+  -webkit-box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+}
+.main.dark > .card {
+  background: rgba(16, 16, 16, 0.5);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(16, 16, 16, 0.25);
+  color: white;
+}
+
+.card img {
+  display: block;
+  margin: 10px auto;
+  height: 50px;
+}
+.main.dark img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.main p {
+  font-size: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
