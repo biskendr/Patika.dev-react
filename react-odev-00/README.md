@@ -27,6 +27,10 @@ npm start
 
 4. Uygulama çıktısını konsolda görüntüleyebilirsiniz.
 
+# Konsol Çıktısı
+
+<img src="./console-result.png" alt="Console Result" width="400"/>
+
 # Gereksinimler
 
 - Bu fonksiyon **"async"** olarak tanımlanmalı ve default olarak dışa aktarılmalıdır. Fonksiyonun içindeki asenkron fonksiyonlar **"await"** ile tanımlanmalıdır.
@@ -76,7 +80,3 @@ npm start
 - "app.js" dosyasına yazmış olduğunuz "getData" isimli fonksiyonu "import" edin.
 
 - Bir alt satırda bu fonksiyonu çalıştırın ve gelen sonucu log'layın.
-
-# Konsol Çıktısı
-
-![console result](console-result.png "console result")
