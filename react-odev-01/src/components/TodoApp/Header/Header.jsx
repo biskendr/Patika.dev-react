@@ -14,7 +14,7 @@ function Header({ addTodos }) {
     if (regex.test(input)) {
       setIsValidInput(false);
       const obj = { id: generateId(), title: input, isDone: false };
-      addTodos((prev) => [...prev, obj]);
+      addTodos((prev) => [obj, ...prev]);
       setInput("");
     } else {
       setIsValidInput(true);
