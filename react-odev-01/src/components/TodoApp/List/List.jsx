@@ -18,6 +18,19 @@ function List({ todos, setTodos, filter }) {
   const handleRemoveTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
+  //function edit todo title
+  const handleEditTodo = (e, id) => {
+    const updatedTodos = todos.map((todo) => {
+      if (todo.id === id) {
+        return {
+          ...todo,
+          title: e.target.value,
+        };
+      }
+      return todo;
+    });
+    setTodos(updatedTodos);
+  };
   //update todo list by filter
   let filteredTodos;
 
@@ -44,7 +57,14 @@ function List({ todos, setTodos, filter }) {
                 checked={isDone}
                 onChange={() => handleToggleTodo(id)}
               />
-              <label>{title}</label>
+              <label
+                contentEditable
+                onBlur={(e) => {
+                  handleEditTodo(id, e.target.textContent);
+                }}
+              >
+                {title}
+              </label>
               <button
                 className="destroy"
                 onClick={() => handleRemoveTodo(id)}
