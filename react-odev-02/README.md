@@ -46,8 +46,10 @@ npm run dev
 # Ekran Görüntüsü
 
 <div align="center">
-<img src="./public/page-view-day.jpg" alt="Weather App Day" width="550">
-<img src="./public/page-view-night.jpg" alt="Weather App Night" width="550">
+  
+<img src="./public/page-view-day.jpg" alt="Weather App Day" width="500">
+<img src="./public/page-view-night.jpg" alt="Weather App Night" width="500">
+  
 </div>
 
 # Gereksinimler
