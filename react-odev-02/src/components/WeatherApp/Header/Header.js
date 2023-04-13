@@ -10,9 +10,10 @@ function Header() {
     <header className={styles.header}>
       <h3>Select a city</h3>
       <select value={city} onChange={(e) => setCity(e.target.value)}>
-        {cities.map((city, index) => (
-          <option key={index} value={city.name}>
-            {city.name}
+        <option value={city} disabled selected hidden>{city}</option>
+        {cities.map((cityy, index) => (
+          <option key={index} value={cityy.name}>
+            {cityy.name}
           </option>
         ))}
       </select>
