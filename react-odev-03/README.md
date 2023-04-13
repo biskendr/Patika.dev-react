@@ -36,6 +36,9 @@ npm test -- --watchAll a
 ```
 
 4. Sonuçları terminalinizde görüntüleyebilirsiniz.
+# Terminal Çıktısı
+
+![output](/react-odev-03/public/terminal_output.png)
 
 # Gereksinimler
 
@@ -58,8 +61,4 @@ Uygulama üzerinde bazı emojiler listeleniyor. Ve yukarıda bulunan input arac�
 - Bir filtreleme işlemi yapıldığında, emoji listesinin bu filtreye uygun şekilde yeniden render edildiğini kontrol edecek olan test kodunu yazın.
 
 - Liste üzerinden herhangi emojiye tıklandığında, ilgili emojinin kopyalandığını kontrol edecek olan test kodunu yazın.
-
-# Terminal Çıktısı
-
-![output](/react-odev-03/public/terminal_output.png)
 

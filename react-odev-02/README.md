@@ -41,7 +41,7 @@ npm install
 npm run dev
 ```
 
-4. Uygulamayı görüntülemek için tarayıcınızda http://localhost:3000 adresine gidin.
+6. Uygulamayı görüntülemek için tarayıcınızda http://localhost:3000 adresine gidin.
 
 # Ekran Görüntüsü
 
