@@ -21,13 +21,11 @@ export const WeatherProvider = ({ children }) => {
                 const { longitude: lon, latitude: lat } = await geoCoords();
                 if (lon && lat) {
                     const result = await fetchCityName(lon, lat);
-                    setCity(result);
+                    setCity(result.split(' ')[0]);
                 }
             } catch (error) {
                 setCity("Istanbul");
-
             }
-
         })();
     }, []);
 
